@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Documentação</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="titulo-principal">Flexbox</h1>
+    <h2 class="subtitulo-principal">Documentação</h2>
+<header id="topo-pagina">
+    <nav class="menu-principal">
+        <ul>
+            <li>
+                <a href="#displayflex">Display-flex</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#justify">Justify-content</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#flex-direction">Flex-direction</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#align-items">Align-items</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#flex-wrap">Flex-wrap</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#flex-flow">Flex-flow</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#align-content">Align-content</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <section id="displayflex">
+
+            <article>
+                
+                <h3 class="titulo-de-artigo">Display: flex<h3>
+                
+                    <details> 
+                        <summary>Clique Aqui</summary>
+                        <p>
+                            A primeira propriedade que precisa ser declarada para que o Flexbox funcione!
+                        </p>
+                        <p>Algumas propriedade como flex-direction, justify-content e align-content já vem com os valores padrão.</p>
+                        
+                        
+                        
+                        <!--table>(tr>th.propriedade+th.valor)+tr*3>td.propriedade+td.valor -->
+                    
+             <table>
+                 <tr>
+                     <th class="propriedade">Propriedade</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                 <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+            </table>
+            
+            
+            <p>Exemplo 1:</p>
+            <div class="container">
+                <div class="contido">Cx1</div>
+                <div class="contido">Cx2</div>
+                <div class="contido">Cx3</div>
+                <div class="contido">Cx4</div>
+                <div class="contido">Cx5</div>
+                
+            </div>
+        </details>
+    </article>
+</section>
+        <!--article>h3+details+summary+i+b+p*4+div*5 (Código para fazer a estrutura base do site)-->
+
+<section id="justify">
+
+    <article>
+
+        <h3 class="titulo-de-artigo">justify-content</h3>
+
+        <details> 
+
+            <summary>Clique Aqui</summary>
+           
+            <p>
+                Serve para alinhar todos os itens contidos em container (flexbox), juntando todos os itens em um só alinhamento
+            </p>
+            <p>
+                esse código se divide em 3 partes:
+                <br> 
+                
+                <br>center 
+                
+            <br>flex-start 
+           
+            <br>flex-end
+                <div class="container5">
+
+                    <div class="container2">
+                        <div class="contido2">TEXTO <br> CENTER</div>
+                        <div class="tooltip">CÓDIGO
+                            <span class="tooltiptext">&lt;justify-content: center;&gt;</span>
+                        </div>
+                    </div>
+    
+                    <div class="container3"> 
+                        <div class="contido2">TEXTO <br> FlexSTART</div>
+                        <div class="tooltip">CÓDIGO
+                            <span class="tooltiptext">&lt;justify-content: flex-start;&gt;</span>
+                        </div>
+                    </div>
+    
+                    <div class="container4">
+                        <div class="contido2">TEXTO <br> FlexEND</div>
+                        <div class="tooltip">CÓDIGO
+                            <span class="tooltiptext">&lt;justify-content: flex-end;&gt;</span>
+                        </div>
+                    </div>
+                </div>
+
+        </details>
+
+    </article>
+</section>
+
+<section id="flex-direction">
+
+    <article>
+        <h3 class="titulo-de-artigo">flex-direction</h3>
+        <details>
+
+            <summary>Clique Aqui</summary>
+          
+            <p> Ele é usado para direcionar, empilhar, e organizar os itens ou textos contidos no sentido vertical ou horizontal</p>
+            <p>Diferentemente do "justify-content" o flex-direction é dividido em 4 partes:</p>
+            <p> row <br> row-reverse <br>column <br> column-reverse </p>
+            <p></p>
+            <div class="container10">
+                
+                <div class="container6">
+                    <div class="contido">TEXTO <br>1</div>
+                    <div class="contido">TEXTO <br>2</div>
+                    <div class="contido">TEXTO <br>3</div>
+                    <div class="tooltip">CÓDIGO
+                        <span class="tooltiptext">&lt;flex-direction: row;&gt;</span>
+                    </div>
+                </div>
+
+                <div class="container7">
+                    <div class="contido">TEXTO <br>1</div>
+                    <div class="contido">TEXTO <br>2</div>
+                    <div class="contido">TEXTO <br>3</div>
+                    <div class="tooltip">CÓDIGO
+                        <span class="tooltiptext">&lt;flex-direction: row-reverse;&gt;</span>
+                    </div>
+                </div>
+
+                <div class="container8">
+                    <div class="contido">TEXTO <br>1</div>
+                    <div class="contido">TEXTO <br>2</div>
+                    <div class="contido">TEXTO <br>3</div>
+                    <div class="tooltip">CÓDIGO
+                        <span class="tooltiptext">&lt;flex-direction: column;&gt;</span>
+                    </div>
+                </div>
+
+                <div class="container9">
+                    <div class="contido">TEXTO <br>1</div>
+                    <div class="contido">TEXTO <br>2</div>
+                    <div class="contido">TEXTO <br>3</div>
+                    <div class="tooltip">CÓDIGO
+                        <span class="tooltiptext">&lt;flex-direction: column-reverse;&gt;</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </details>
+    </article>
+</section>
+
+<section id="align-items">
+
+    <article>
+        <h3 class="titulo-de-artigo">align-itens</h3>
+        <details>
+
+            <summary>Clique Aqui</summary>
+            <p>Para este código o alinhamento horizontal dos itens, e a sua utilização priorizando sempre a centralização de um texto com o outro</p>
+            <p>Esse tem uma certa atenção priorizado por ele ser dividido em 5 partes:</p>
+            <p>Center <br> flex-end <br> flex-start <br>stretch <br> baseline</p>
+            <p></p>
+
+            <div class="container16">
+
+                <div class="container11">
+                    <div class="contido">TEXTO <br>1</div>
+                    <div class="contido">TEXTO <br>2</div>
+                    <div class="contido">TEXTO <br>3</div>
+                    <div class="contido">TEXTO <br>4</div>
+                   <div class="tooltip">CÓDIGO
+                        <span class="tooltiptext">&lt;align-items: center;&gt;</span>
+                    </div> 
+                </div>
+                <div class="container12">
+                    <div class="contido">TEXTO <br>1</div>
+                    <div class="contido">TEXTO <br>2</div>
+                    <div class="contido">TEXTO <br>3</div>
+                    <div class="contido">TEXTO <br>4</div>
+                    <div class="tooltip">CÓDIGO
+                        <span class="tooltiptext">&lt;align-items: flex-end;&gt;</span>
+                    </div>
+                </div>
+                <div class="container13">
+                    <div class="contido">TEXTO <br>1</div>
+                    <div class="contido">TEXTO <br>2</div>
+                    <div class="contido">TEXTO <br>3</div>
+                    <div class="contido">TEXTO <br>4</div>
+                    <div class="tooltip">CÓDIGO
+                        <span class="tooltiptext">&lt;align-items: flex-start;&gt;</span>
+                    </div>
+                </div>
+                <div class="container14">
+                    <div class="contido">TEXTO <br>1</div>
+                    <div class="contido">TEXTO <br>2</div>
+                    <div class="contido">TEXTO <br>3</div>
+                    <div class="contido">TEXTO <br>4</div>
+                    <div class="tooltip">CÓDIGO
+                        <span class="tooltiptext">&lt;align-items: stretch;&gt;</span>
+                    </div>
+                </div>
+                <div class="container15">
+                    <div class="contido">TEXTO <br>1</div>
+                    <div class="contido">TEXTO <br>2</div>
+                    <div class="contido">TEXTO <br>3</div>
+                    <div class="contido">TEXTO <br>4</div>
+                    <div class="tooltip">CÓDIGO
+                        <span class="tooltiptext">&lt;align-items: baseline;&gt;</span>
+                    </div>
+                </div>
+            </div>
+            
+        </details>
+    </article>
+</section>
+
+<section id="flex-wrap">
+
+    <article>
+        <h3 class="titulo-de-artigo">flex-wrap</h3>
+        <details>
+
+            <summary>Clique Aqui</summary>
+            <p>O flex-wrap quando necessário se a pagina for pequena ou estiver em zoom, ele reagrupa e reorganiza os itens para melhor vizualização do usuário </p>
+            <p> Este é dividido em 3 partes:</p>
+            <p>wrap <br>nowrap <br>wrap-reverse </p>
+            
+            <div class="container20">
+
+                <div class="container17">
+                    <div class="contido">ITEM <br>1</div>
+                    <div class="contido">ITEM <br>2</div>
+                    <div class="contido">ITEM <br>3</div>
+                    <div class="contido">ITEM <br>4</div>
+                    <div class="contido">ITEM <br>5</div>
+                    <div class="contido">ITEM <br>6</div>
+                    <div class="tooltip">CÓDIGO
+                        <span class="tooltiptext">&lt;flex-wrap: wrap&gt;</span>
+                    </div> 
+                </div>
+                <div class="container18">
+                    <div class="contido">ITEM <br>1</div>
+                    <div class="contido">ITEM <br>2</div>
+                    <div class="contido">ITEM <br>3</div>
+                    <div class="contido">ITEM <br>4</div>
+                    <div class="contido">ITEM <br>5</div>
+                    <div class="contido">ITEM <br>6</div>
+                    <div class="tooltip">CÓDIGO
+                        <span class="tooltiptext">&lt;flex-wrap: nowrap&gt;</span>
+                    </div> 
+                </div>
+                <div class="container19">
+                    <div class="contido">ITEM <br>1</div>
+                    <div class="contido">ITEM <br>2</div>
+                    <div class="contido">ITEM <br>3</div>
+                    <div class="contido">ITEM <br>4</div>
+                    <div class="contido">ITEM <br>5</div>
+                    <div class="contido">ITEM <br>6</div>
+                    <div class="tooltip">CÓDIGO
+                        <span class="tooltiptext">&lt;flex-wrap: wrap-resverse&gt;</span>
+                    </div> 
+                </div>
+            </div>
+
+        </details>
+    </article>
+</section>
+
+<section id="flex-flow">
+
+    <article>
+        <h3 class="titulo-de-artigo">flex-flow</h3>
+        <details>
+
+            <summary>Clique Aqui</summary>
+            <p>Neste, temos a junção de dois flex, o "flex-direction" e o "flex-wrap"</p>
+            <p>Tendo apenas 1 jeito de se usar: <br> flex-flow: row-wrap</p>
+
+            <div class="container21">
+                <div class="contido">TEXTO <br>1</div>
+                <div class="contido">TEXTO <br>2</div>
+                <div class="contido">TEXTO <br>3</div>
+                <div class="contido">TEXTO <br>4</div>
+                <div class="contido">TEXTO <br>5</div>
+                <div class="contido">TEXTO <br>6</div>
+            </div>
+        </details>
+    </article>
+</section>
+
+<section id="align-content">
+        <article>
+            <h3 class="titulo-de-artigo">align-content</h3>
+            <details>
+
+                <summary>Clique Aqui</summary>
+                <p> Como o nome já diz, ele é usado para alinhar os espaçamentos entre, um item e outro, com espaçamento igual para cada um.</p>
+                <p>Ele é usado de três formas:</p>
+                <p>- space-around</p>
+                <p>- space-between</p>
+                <p>- space-evenly</p>
+                <p>Veja cada um deles sendo usado nos exemplos abaixo:</p>
+
+                <div class="container22">
+                    <div class="contido">TEXTO <br>1</div>
+                    <div class="contido">TEXTO <br>2</div>
+                    <div class="contido">TEXTO <br>3</div>
+                    <div class="contido">TEXTO <br>4</div>
+                    <div class="contido">TEXTO <br>5</div>
+                    <div class="contido">TEXTO <br>6</div>
+                    <div class="contido">TEXTO <br>7</div>
+                    <div class="contido">TEXTO <br>8</div>
+                    <div class="contido">TEXTO <br>9</div>
+                    <div class="contido">TEXTO <br>10</div>
+                </div>
+                <br>
+                <div class="container23">
+                    <div class="contido">TEXTO <br>1</div>
+                    <div class="contido">TEXTO <br>2</div>
+                    <div class="contido">TEXTO <br>3</div>
+                    <div class="contido">TEXTO <br>4</div>
+                    <div class="contido">TEXTO <br>5</div>
+                    <div class="contido">TEXTO <br>6</div>
+                    <div class="contido">TEXTO <br>7</div>
+                    <div class="contido">TEXTO <br>8</div>
+                    <div class="contido">TEXTO <br>9</div>
+                    <div class="contido">TEXTO <br>10</div>
+                </div>
+                <br>
+                <div class="container24">
+                    <div class="contido">TEXTO <br>1</div>
+                    <div class="contido">TEXTO <br>2</div>
+                    <div class="contido">TEXTO <br>3</div>
+                    <div class="contido">TEXTO <br>4</div>
+                    <div class="contido">TEXTO <br>5</div>
+                    <div class="contido">TEXTO <br>6</div>
+                    <div class="contido">TEXTO <br>7</div>
+                    <div class="contido">TEXTO <br>8</div>
+                    <div class="contido">TEXTO <br>9</div>
+                    <div class="contido">TEXTO <br>10</div>
+                </div>
+
+            </details>
+        </article>
+
+</section>
+
+</body>
+</html>
+
