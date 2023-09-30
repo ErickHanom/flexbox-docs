@@ -1,0 +1,399 @@
+html{
+    scroll-behavior: smooth;
+  }
+  
+  :root{
+    --cor-primaria:#FFBB5C;
+    --cor-secundaria: #FFF8EA;
+    --cor-terciaria:#E25E3E;
+    --cor-quaternaria:#884A39;
+    --cor-fundo:#e0c39d;
+    --fonte-primária: serif;
+  }
+  
+  body{
+    margin: 10px 20px;
+    background-color:var(--cor-fundo) ;
+  }
+  
+  .menu-principal{
+  background-color: var(--cor-quaternaria);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: space-evenly;
+  }
+  
+  .menu-principal li {
+    color: var(--cor-terciária);
+    line-height: 40px;
+    display: flex;
+    transition: all .35s 
+  }
+  
+  .menu-principal a {
+  color: var(--cor-secundaria);
+  font-family: Sofia;
+  font-size: 120%;
+  padding: 0 20px;
+  }
+  
+  .menu-principal li:hover {
+    background-color: #533a31;
+    font-size: 130%;
+  }
+  
+  
+  /*Estilos do conteúdo*/
+  
+  .titulo-principal{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: bold;
+    text-align: center;
+    font-size: 30pt;
+  }
+  
+  .subtitulo-principal{
+    font-family: Impact, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 20pt;
+    text-decoration: underline;
+  }
+  
+  .titulo-de-artigo{
+    font-family: var(--fonte-primária);
+    text-align: left;
+    text-decoration:underline;
+    font-size: 20pt;
+    padding-bottom: 10px;
+    text-shadow:2px 2px #E25E3E;
+  }
+  
+  p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+  
+  }
+  
+  /*Estilos do 1º tema (display-flex) */
+  
+  table,th,td {
+    text-align: center;
+    padding: 2px;
+    border: solid ;
+    font-weight: bold;
+  }
+  
+  .container{
+  height: 150px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  box-shadow: 10px 10px #da8c7b;
+  }
+  
+  .contido{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    border: 5px solid #000;
+    margin: 10px 1px 0 10px;
+  }
+  
+  .contido2{
+  width: 100px;
+  height: 50px;
+  background-color: aqua;
+  border: 5px solid #000;
+  margin: 10px 1px 0 10px;
+  }
+  
+  
+  
+  .container2 {
+    width: 500px;
+    height: 250px;
+    background-color: #faebd7;
+    border: 3px solid #000; /* Equivalente á cor #000000*/
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 10px 10px #da8c7b;
+  }
+  
+  .container3 {
+  width: 500px;
+  height: 250px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 5px;
+  box-shadow: 10px 10px #da8c7b;
+  }
+  
+  
+  .container4 {
+  width: 500px;
+  height: 250px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 5px;
+  box-shadow: 10px 10px #da8c7b;
+  }
+  
+  .container5 {
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  border-radius: 5px;
+  column-count: 3;
+  gap: 20px;
+  }
+  
+  .container6 {
+    width: 300px;
+    height: 250px;
+    background-color: #faebd7;
+    border: 3px solid #000; /* Equivalente á cor #000000*/
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    align-content: space-around;
+    box-shadow: 10px 10px #da8c7b;
+  }
+  
+  
+  .container7 {
+  width: 300px;
+  height: 250px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 5px;
+  align-content: space-evenly;
+  box-shadow: 10px 10px #da8c7b;
+  }
+  
+  
+  .container8 {
+  width: 300px;
+  height: 250px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  align-content: space-around;
+  box-shadow: 10px 10px #da8c7b;
+  }
+  
+  .container9 {
+  width: 300px;
+  height: 250px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 5px;
+  align-content: space-around;
+  box-shadow: 10px 10px #da8c7b;
+  }
+  
+  .container10 {
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  border-radius: 5px;
+  row-gap: 10px;
+  gap: 30px;
+  }
+  
+  .container11 {
+  height: 250px;
+  width: 500px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  align-content: space-around;
+  box-shadow: 10px 10px #da8c7b;
+  }
+  
+  .container12 {
+  width: 500px;
+  height: 250px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  align-content: space-around;
+  box-shadow: 10px 10px #da8c7b;
+  }
+  
+  .container13 {
+  width: 500px;
+  height: 250px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  align-items: flex-start;
+  border-radius: 5px;
+  align-content: space-around;
+  box-shadow: 10px 10px #da8c7b;
+  }
+  
+  .container14 {
+  width: 500px;
+  height: 250px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  align-items: stretch;
+  border-radius: 5px;
+  align-content: space-around;
+  box-shadow: 10px 10px #da8c7b;
+  }
+  
+  .container15 {
+  width: 500px;
+  height: 250px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  align-items: baseline;
+  border-radius: 5px;
+  align-content: space-around;
+  box-shadow: 10px 10px #da8c7b;
+  }
+  
+  .container16 {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  border-radius: 5px;
+  gap: 20px;
+  }
+  
+  .container17{
+  height: 350px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  box-shadow: 10px 10px #da8c7b;
+  resize: both;
+  overflow: auto;
+  }
+  
+  .container18{
+  height: 250px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  flex-wrap: nowrap;
+  border-radius: 5px;
+  box-shadow: 10px 10px #da8c7b;
+  resize: both;
+  overflow: auto;
+  }
+  
+  .container19{
+  height: 250px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  flex-wrap: wrap-reverse;
+  border-radius: 5px;
+  box-shadow: 10px 10px #da8c7b;
+  resize: both;
+  overflow: auto;
+  }
+  
+  .container20 {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    border-radius: 5px;
+    row-gap: 10px;
+    gap: 30px;
+    }
+  
+  .container21{
+  height: 250px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 5px;
+  box-shadow: 10px 10px #da8c7b;
+  resize: both;
+  overflow: auto;
+  }
+  
+  .container22{
+  height: 350px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  border-radius: 5px;
+  box-shadow: 10px 10px #da8c7b;
+  }
+  
+  .container23{
+  height: 350px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  border-radius: 5px;
+  box-shadow: 10px 10px #da8c7b;
+  }
+  
+  .container24{
+  height: 350px;
+  background-color: #faebd7;
+  border: 3px solid #000; /* Equivalente á cor #000000*/
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 10px 10px #da8c7b;
+  }      
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
